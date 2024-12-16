@@ -234,7 +234,19 @@ plt.show()
     <li><b>Renaming Columns:</b> Columns were renamed appropriately for clarity and ease of use. This ensured that the names of the variables in Power BI were intuitive for the users.</li>
     <li><b>Formatting Columns:</b> Columns such as percentages were formatted correctly to ensure accurate representation. I also ensured proper capitalisation across text fields for consistency.</li>
     <li><b>Replacing Values in the Education Column:</b> Values in the "education" column were replaced with more easily understandable labels (e.g., changing "basic.6y" to "Basic Education").</li>
-    <li><b>Grouping Ages with a DAX Query:</b> I used a DAX query to group customer ages into meaningful ranges (e.g., 18-30, 31-45, etc.), making it easier to filter the data by different age groups in slicers.</li>
+    <li><b>Grouping Ages with a DAX Query:</b> I used a DAX query to group customer ages into meaningful ranges (e.g., 18-30, 31-45, etc.), making it easier to filter the data by different age groups in slicers.</li><br>    
+
+```DAX
+Age Group = 
+SWITCH(TRUE(),
+    'Table'[age] >= 18 && 'Table'[age] <= 30, "18-30",
+    'Table'[age] >= 31 && 'Table'[age] <= 45, "31-45",
+    'Table'[age] >= 46 && 'Table'[age] <= 60, "46-60",
+    'Table'[age] > 60, "60+",
+    "Unknown"
+)
+```
+    
 </ul>
 
 <h3>Visualisations Created in Power BI</h3>
@@ -276,5 +288,3 @@ https://github.com/user-attachments/assets/2da8dfec-d660-4e9e-a331-6fa1d2873858
 <p>
     By incorporating these insights and recommendations, the bank can improve its marketing effectiveness, maximise campaign success rates, and ensure that resources are optimally allocated to engage the most promising customer segments.
 </p> 
-
-
