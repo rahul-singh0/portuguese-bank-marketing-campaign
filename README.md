@@ -23,6 +23,7 @@
 </ul>
 
 <h1>Project Workflow</h1>
+
 <h2>1. Define Scope and Metrics</h2>
 <p>
     The first step of the project was to clearly define the scope and objectives. This involved understanding the problem at hand: predicting whether a customer would subscribe to a term deposit from a marketing campaign. The dataset provided various customer attributes (e.g., age, job, marital status) and campaign outcomes (e.g., whether they subscribed to the term deposit or not). 
@@ -152,4 +153,75 @@ print(df[rows_with_spaces])
 ```
 
 <h2>3. Exploratory Data Analysis</h2>
+
+<p>
+    After the data was cleaned, exploratory data analysis (EDA) was performed to understand trends, distributions, and correlations in the dataset. Key tasks included:
+</p>
+<ul>
+    <li>Examining individual features like age, job type, and campaign success to understand their distribution.</li>
+    <li>Investigating relationships between features such as the correlation between `age` and `y` (campaign success), or `job` and `y`.</li>
+    <li>Using bar charts, histograms, and box plots to visualise distributions and relationships between features. For example, visualising how campaign success varies by job type or age group.</li>
+</ul>
+<p>
+    The goal of EDA was to uncover patterns and provide a deeper understanding of the dataset that could inform the creation of the final dashboard and key insights and recommendations.
+</p>
+
+<p>Below are a couple examples of visualisations from the EDA. You can find all the visualisations along with the corresponding source code here.</p>
+
+<h4>Age Distribution of Customers</h4>
+<p>
+    This histogram shows the distribution of customer ages. The peak is around the 30-40 age range, which is valuable for identifying the core customer demographic.
+</p>
+
+```python
+## 1.1. Plot the distribution of 'age'
+plt.figure(figsize=(8, 6))
+sns.histplot(df['age'], kde=True, bins=30)
+plt.title('Age Distribution of Customers')
+plt.xlabel('Age')
+plt.ylabel('Frequency')
+plt.show()
+```
+
+![age_distribution](https://github.com/user-attachments/assets/61d064f6-83dd-4649-a356-763e73e51a02)
+
+
+<h4>Consumer Confidence Index vs. Campaign Success</h4>
+<p>
+    This box plot reveals how campaigns performed based on the Consumer Confidence Index (CCI). It indicates that campaigns are generally more successful when consumer confidence is higher.
+</p>
+
+```python
+## 3.3. Explore the relationship between 'cons_conf_idx' and campaign success
+plt.figure(figsize=(8, 6))
+sns.boxplot(x='y', y='cons_conf_idx', data=df)
+plt.title('Consumer Confidence Index vs. Campaign Success')
+plt.xlabel('Campaign Success')
+plt.ylabel('Consumer Confidence Index')  # Descriptive y-axis label
+plt.show()
+```
+
+![cci_campaign_success](https://github.com/user-attachments/assets/1614a06e-5af0-4e63-9158-53242b164e72)
+
+
+
+<h3>Key Findings from the EDA</h3>
+<ul>
+    <li><b>Demographics:</b> The majority of customers are between 30-40 years old, suggesting a primary target market for campaigns.</li>
+    <li><b>Campaign Duration:</b> Most campaigns are brief, and shorter campaigns tend to have higher success rates.</li>
+    <li><b>Economic Factors:</b> The Consumer Confidence Index (CCI) and Employment Variation Rate are significant factors that impact campaign success.</li>
+    <li><b>Customer Segmentation:</b> The dataset shows a wide range of job types, with "admin" and "technician" being the most common, helping to tailor customer segmentation strategies.</li>
+</ul>
+
+
 <h2>4. Data Visualisation</h2>
+
+<p>
+    The final stage of the project involved creating an interactive Power BI dashboard to communicate the insights derived from the analysis. The dashboard was designed to be user-friendly, allowing users to explore various aspects of the marketing campaign's success. Key features of the dashboard included:
+</p>
+<ul>
+    <li><b>Campaign performance:</b> Displaying the total number of successful term deposit sign-ups, and how success varied by demographics, job types, and months.</li>
+    <li><b>Trend analysis:</b> Showing how campaign success changed over time, such as by month and day of the week.</li>
+    <li><b>Interactivity:</b> Incorporating slicers for demographics, job types, and months, allowing users to filter and explore the data from different angles.</li>
+    <li><b>Key insights:</b> Displaying insights based on the EDA phase, such as which job types had the highest success rates and which months saw more conversions.</li>
+</ul>
