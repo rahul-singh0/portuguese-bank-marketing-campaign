@@ -24,6 +24,12 @@
 
 <h1>Project Workflow</h1>
 <h2>1. Define Scope and Metrics</h2>
+<p>
+    The first step of the project was to clearly define the scope and objectives. This involved understanding the problem at hand: predicting whether a customer would subscribe to a term deposit from a marketing campaign. The dataset provided various customer attributes (e.g., age, job, marital status) and campaign outcomes (e.g., whether they subscribed to the term deposit or not). 
+</p>
+<p>
+    The key metric for the project was the binary outcome variable, `y`, which represents whether a customer subscribed to a term deposit ("yes" or "no"). Additionally, I focused on understanding which factors most influenced the likelihood of subscription, including customer demographics, economic conditions, and campaign attributes.
+</p>
 <h2>2. Data Preperation</h2>
 <h2>3. Exploratory Data Analysis</h2>
 <h2>4. Data Visualisation</h2>
