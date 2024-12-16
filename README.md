@@ -1,5 +1,8 @@
 # Portuguese Bank Marketing Campaign Insights & Analysis
-<h1>Project Overview</h1>
+![banco_portugal](https://github.com/user-attachments/assets/52734b62-9f79-46fc-bcfb-5a39d9e4e054)
+
+
+<h1>Project Overview</h1
 
 <h3>Objective</h3>
 <p>
