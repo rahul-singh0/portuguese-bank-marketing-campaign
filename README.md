@@ -225,3 +225,8 @@ plt.show()
     <li><b>Interactivity:</b> Incorporating slicers for demographics, job types, and months, allowing users to filter and explore the data from different angles.</li>
     <li><b>Key insights:</b> Displaying insights based on the EDA phase, such as which job types had the highest success rates and which months saw more conversions.</li>
 </ul>
+
+https://github.com/user-attachments/assets/2da8dfec-d660-4e9e-a331-6fa1d2873858
+
+
+
