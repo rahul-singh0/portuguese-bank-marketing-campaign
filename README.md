@@ -6,6 +6,12 @@
     The objective of this project is to analyse the marketing campaigns of a Portuguese bank, focusing on understanding the factors influencing campaign success. By analysing various customer attributes and campaign outcomes, this project aims to uncover insights that can help improve future marketing strategies. The project involves exploring the dataset through data analysis and creating visualisations to interpret key patterns and trends.
 </p>
 
+<h3>Dataset Description</h3>
+<p>
+    The dataset used in this project is the "Bank Marketing" dataset, sourced from the UCI Machine Learning Repository. This dataset contains information about direct marketing campaigns (phone calls) conducted by a Portuguese bank, where the goal was to predict if a customer would subscribe to a term deposit. The dataset includes demographic, social, and economic attributes such as age, job type, marital status, education, contact communication type, and consumer economic indicators, among others.
+    <a href="https://archive.ics.uci.edu/dataset/222/bank+marketing" target="_blank">Dataset Source</a>.
+</p>
+
 <h3>Deliverables</h3>
 <ul>
     <li>Data preparation, including data cleansing, validation, and transformation using Python and SQL.</li>
