@@ -21,3 +21,9 @@
     <li><b>Python</b> for exploratory data analysis (EDA) and visualisation (libraries: Pandas, Matplotlib, Seaborn).</li>
     <li><b>Power BI</b> for creating interactive dashboards and visualisations.</li>
 </ul>
+
+<h1>Project Workflow</h1>
+<h2>1. Define Scope and Metrics</h2>
+<h2>2. Data Preperation</h2>
+<h2>3. Exploratory Data Analysis</h2>
+<h2>4. Data Visualisation</h2>
