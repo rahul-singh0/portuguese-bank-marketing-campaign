@@ -2,9 +2,10 @@
 ![banco_portugal](https://github.com/user-attachments/assets/52734b62-9f79-46fc-bcfb-5a39d9e4e054)
 
 
-<h1>Project Overview</h1
+<h1>Project Overview</h1>
 
 <h3>Objective</h3>
+
 <p>
     The objective of this project is to analyse the marketing campaigns of a Portuguese bank, focusing on understanding the factors influencing campaign success. By analysing various customer attributes and campaign outcomes, this project aims to uncover insights that can help improve future marketing strategies. The project involves exploring the dataset through data analysis and creating visualisations to interpret key patterns and trends.
 </p>
@@ -175,7 +176,9 @@ print(df[rows_with_spaces])
     The goal of EDA was to uncover patterns and provide a deeper understanding of the dataset that could inform the creation of the final dashboard and key insights and recommendations.
 </p>
 
-<p>Below are a couple examples of visualisations from the EDA. You can find all the visualisations along with the corresponding source code here.</p>
+<p>Below are a couple of examples of visualisations from the EDA. You can find all the visualisations, along with the corresponding source code and analysis, in the <a href="https://github.com/rahul-singh0/portuguese-bank-marketing-campaign/tree/main/data_analysis" target="_blank">Data Analysis section of the GitHub repository</a>.</p>
+
+
 
 <h4>Age Distribution of Customers</h4>
 <p>
