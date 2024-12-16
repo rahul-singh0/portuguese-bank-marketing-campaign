@@ -223,13 +223,28 @@ plt.show()
 <h2>4. Data Visualisation</h2>
 
 <p>
-    The final stage of the project involved creating an interactive Power BI dashboard to communicate the insights derived from the analysis. The dashboard was designed to be user-friendly, allowing users to explore various aspects of the marketing campaign's success. Key features of the dashboard included:
+    In this phase, I used Power BI to create interactive and insightful visualisations of the cleaned dataset. The goal was to provide clear, actionable insights that could guide future marketing strategies. The visualisations focused on key metrics, customer segments, and economic indicators to understand how these factors impacted campaign success.
+</p>
+
+<h3>Data Preparation in Power BI</h3>
+<p>
+    Before visualising the data, additional preparation and cleansing were carried out directly within Power BI to ensure the dataset was ready for effective visual representation:
 </p>
 <ul>
-    <li><b>Campaign performance:</b> Displaying the total number of successful term deposit sign-ups, and how success varied by demographics, job types, and months.</li>
-    <li><b>Trend analysis:</b> Showing how campaign success changed over time, such as by month and day of the week.</li>
-    <li><b>Interactivity:</b> Incorporating slicers for demographics, job types, and months, allowing users to filter and explore the data from different angles.</li>
-    <li><b>Key insights:</b> Displaying insights based on the EDA phase, such as which job types had the highest success rates and which months saw more conversions.</li>
+    <li><b>Renaming Columns:</b> Columns were renamed appropriately for clarity and ease of use. This ensured that the names of the variables in Power BI were intuitive for the users.</li>
+    <li><b>Formatting Columns:</b> Columns such as percentages were formatted correctly to ensure accurate representation. I also ensured proper capitalisation across text fields for consistency.</li>
+    <li><b>Replacing Values in the Education Column:</b> Values in the "education" column were replaced with more easily understandable labels (e.g., changing "basic.6y" to "Basic Education").</li>
+    <li><b>Grouping Ages with a DAX Query:</b> I used a DAX query to group customer ages into meaningful ranges (e.g., 18-30, 31-45, etc.), making it easier to filter the data by different age groups in slicers.</li>
+</ul>
+
+<h3>Visualisations Created in Power BI</h3>
+<p>
+    The following visualisations were created to provide insights into customer demographics, campaign performance, and economic trends:
+</p>
+<ul>
+    <li><b>Age Group Distribution:</b> A bar chart to show the distribution of customers across different age groups, helping to identify the core target audience for the bank's marketing campaigns.</li>
+    <li><b>Campaign Performance by Job Type:</b> A stacked column chart illustrating campaign success across different job types, highlighting which occupations are more responsive to the campaign.</li>
+    <li><b>Economic Impact on Campaign Success:</b> Line charts and scatter plots were used to demonstrate how economic variables, such as the Consumer Confidence Index (CCI) and Employment Variation Rate, correlate with campaign success.</li>
 </ul>
 
 https://github.com/user-attachments/assets/2da8dfec-d660-4e9e-a331-6fa1d2873858
